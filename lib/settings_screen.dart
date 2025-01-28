@@ -7,6 +7,7 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = Theme.of(context).brightness;
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
       body: ListView(
@@ -15,11 +16,16 @@ class SettingsScreen extends StatelessWidget {
             leading: const Icon(Icons.brightness_6),
             title: const Text('Dark Mode'),
             trailing: Switch(
-              value: Theme.of(context).brightness == Brightness.dark,
+              value: brightness == Brightness.dark,
               onChanged: (_) {
                 Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
               },
             ),
+          ),
+          const ListTile(
+            leading: Icon(Icons.info),
+            title: Text('App Version'),
+            trailing: Text('1.0.0'),
           ),
         ],
       ),

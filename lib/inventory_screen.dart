@@ -8,14 +8,20 @@ class InventoryScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Inventory')),
       body: ListView.builder(
-        itemCount: 10,
-        itemBuilder: (context, index) {
+        itemCount: 5,
+        itemBuilder: (context, i) {
           return ListTile(
             leading: const Icon(Icons.inventory),
-            title: Text('Item ${index + 1}'),
-            subtitle: Text('Quantity: ${(index + 1) * 10}'),
+            title: Text('Item ${i + 1}'),
+            subtitle: Text('Quantity: ${(i + 1) * 10}'),
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // TODO:  add item
+        },
+        child: const Icon(Icons.add),
       ),
     );
   }

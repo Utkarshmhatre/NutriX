@@ -13,8 +13,15 @@ class ESGDetailsScreen extends StatelessWidget {
           Card(
             child: ListTile(
               leading: Icon(Icons.eco),
-              title: Text('Environmental Impact'),
-              subtitle: Text('Carbon footprint and sustainability metrics'),
+              title: Text('Environmental Initiatives'),
+              subtitle: Text('Focus on carbon footprint reduction'),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: Icon(Icons.people),
+              title: Text('Community Engagement'),
+              subtitle: Text('Social programs and impact'),
             ),
           ),
         ],
