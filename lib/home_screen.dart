@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'distribution_screen.dart';
-import 'inventory_screen.dart';
+import 'screens/inventory_screen.dart';
 import 'consumer_screen.dart';
 import 'settings_screen.dart';
 import 'esg_details_screen.dart';
