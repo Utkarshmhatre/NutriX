@@ -1,0 +1,90 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+FileSystemException: FileSystemException: Creation of temporary directory failed, path = '/tmp/flutter_tools.' (OS Error: No space left on device, errno = 28)
+
+```
+#0      _Directory.createTempSync (dart:io/directory_impl.dart:170:7)
+#1      ForwardingDirectory.createTempSync (package:file/src/forwarding/forwarding_directory.dart:28:21)
+#2      LocalFileSystem.systemTempDirectory (package:flutter_tools/src/base/file_system.dart:236:46)
+#3      ErrorHandlingFileSystem.systemTempDirectory (package:flutter_tools/src/base/error_handling_io.dart:127:31)
+#4      new ResidentRunner (package:flutter_tools/src/resident_runner.dart:1110:24)
+#5      new HotRunner (package:flutter_tools/src/run_hot.dart:104:9)
+#6      RunCommand.createRunner (package:flutter_tools/src/commands/run.dart:694:14)
+<asynchronous suspension>
+#7      RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:832:35)
+<asynchronous suspension>
+#8      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1408:27)
+<asynchronous suspension>
+#9      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#10     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#11     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:420:9)
+<asynchronous suspension>
+#12     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#13     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:364:5)
+<asynchronous suspension>
+#14     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:130:9)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#16     main (package:flutter_tools/executable.dart:93:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.24.1, on Pop!_OS 22.04 LTS 6.9.3-76060903-generic, locale en_US.UTF-8)
+    [32m•[39m Flutter version 3.24.1 on channel stable at /home/utkarsh/snap/flutter/common/flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision 5874a72aa4 (5 months ago), 2024-08-20 16:46:00 -0500
+    [32m•[39m Engine revision c9b9d5780d
+    [32m•[39m Dart version 3.5.1
+    [32m•[39m DevTools version 2.37.2
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+    [32m•[39m Android SDK at /home/utkarsh/Android/Sdk
+    [32m•[39m Platform android-34, build-tools 34.0.0
+    [32m•[39m Java binary at: /home/utkarsh/android-studio-2024.1.1.11-linux/android-studio/jbr/bin/java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 17.0.10+0-17.0.10b1087.21-11609105)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Chrome - develop for the web
+    [32m•[39m Chrome at google-chrome
+
+[32m[✓][39m Linux toolchain - develop for Linux desktop
+    [32m•[39m clang version 10.0.0-4ubuntu1
+    [32m•[39m cmake version 3.16.3
+    [32m•[39m ninja version 1.10.0
+    [32m•[39m pkg-config version 0.29.1
+
+[32m[✓][39m Android Studio (version 2024.1)
+    [32m•[39m Android Studio at /home/utkarsh/android-studio-2024.1.1.11-linux/android-studio
+    [32m•[39m Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    [32m•[39m Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    [32m•[39m Java version    49204
+
+[32m[✓][39m VS Code (version 1.96.4)
+    [32m•[39m VS Code at /usr/share/code
+    [32m•[39m Flutter extension version 3.102.0
+
+[32m[✓][39m Connected device (2 available)
+    [32m•[39m Linux (desktop) • linux  • linux-x64      • Pop!_OS 22.04 LTS 6.9.3-76060903-generic
+    [32m•[39m Chrome (web)    • chrome • web-javascript • Google Chrome 132.0.6834.110
+
+[32m[✓][39m Network resources
+    [32m•[39m All expected network resources are available.
+
+[32m•[39m No issues found!
+```
