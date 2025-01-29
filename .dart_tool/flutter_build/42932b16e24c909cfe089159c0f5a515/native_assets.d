@@ -1,1 +1,0 @@
- /home/utkarsh/Desktop/NutriX/.dart_tool/flutter_build/42932b16e24c909cfe089159c0f5a515/native_assets.yaml: 

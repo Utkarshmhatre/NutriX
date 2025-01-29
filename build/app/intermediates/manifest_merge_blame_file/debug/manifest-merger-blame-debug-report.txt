@@ -13,236 +13,308 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:2:1-63
-15-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:2:18-60
-16    <!--
-17     Required to query activities that can process text, see:
-18         https://developer.android.com/training/package-visibility and
-19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
-20
-21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
-22    -->
-23    <queries>
-23-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:40:5-45:15
-24        <intent>
-24-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:41:9-44:18
-25            <action android:name="android.intent.action.PROCESS_TEXT" />
-25-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:42:13-72
-25-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:42:21-70
-26
-27            <data android:mimeType="text/plain" />
-27-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:43:13-50
-27-->/home/utkarsh/Desktop/NutriX/android/app/src/main/AndroidManifest.xml:43:19-48
-28        </intent>
-29        <intent>
-29-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
-30            <action android:name="android.support.customtabs.action.CustomTabsService" />
-30-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-90
-30-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-87
-31        </intent>
-32    </queries>
-33
-34    <uses-permission android:name="android.permission.VIBRATE" />
-34-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-66
-34-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-63
-35    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-35-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-77
-35-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-74
-36
-37    <permission
-37-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
-38        android:name="com.example.food_distribution_network.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-38-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
-39        android:protectionLevel="signature" />
-39-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
-40
-41    <uses-permission android:name="com.example.food_distribution_network.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-41-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
-41-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+15-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:2:1-63
+15-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:2:18-60
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:3:1-75
+16-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:3:18-72
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:4:1-77
+17-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:4:18-74
+18    <!--
+19 Required to query activities that can process text, see:
+20         https://developer.android.com/training/package-visibility and
+21         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+22
+23         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+24    -->
+25    <queries>
+25-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:42:5-47:15
+26        <intent>
+26-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:43:9-46:18
+27            <action android:name="android.intent.action.PROCESS_TEXT" />
+27-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:44:13-72
+27-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:44:21-70
+28
+29            <data android:mimeType="text/plain" />
+29-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:45:13-50
+29-->/home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/android/app/src/main/AndroidManifest.xml:45:19-48
+30        </intent>
+31        <intent>
+31-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
+32            <action android:name="android.support.customtabs.action.CustomTabsService" />
+32-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-90
+32-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-87
+33        </intent>
+34    </queries>
+35
+36    <uses-permission android:name="android.permission.VIBRATE" />
+36-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-66
+36-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-63
+37    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+37-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-77
+37-->[:flutter_local_notifications] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-74
+38
+39    <permission
+39-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+40        android:name="com.example.food_distribution_network.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 42
-43    <application
-44        android:name="android.app.Application"
-45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-45-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-46        android:debuggable="true"
-47        android:extractNativeLibs="true"
-48        android:icon="@mipmap/ic_launcher"
-49        android:label="food_distribution_network" >
-50        <activity
-51            android:name="com.example.food_distribution_network.MainActivity"
-52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-53            android:exported="true"
-54            android:hardwareAccelerated="true"
-55            android:launchMode="singleTop"
-56            android:taskAffinity=""
-57            android:theme="@style/LaunchTheme"
-58            android:windowSoftInputMode="adjustResize" >
-59
-60            <!--
-61                 Specifies an Android theme to apply to this Activity as soon as
-62                 the Android process has started. This theme is visible to the user
-63                 while the Flutter UI initializes. After that, this theme continues
-64                 to determine the Window background behind the Flutter UI.
-65            -->
-66            <meta-data
-67                android:name="io.flutter.embedding.android.NormalTheme"
-68                android:resource="@style/NormalTheme" />
-69
-70            <intent-filter>
-71                <action android:name="android.intent.action.MAIN" />
-72
-73                <category android:name="android.intent.category.LAUNCHER" />
-74            </intent-filter>
-75        </activity>
-76        <!--
-77             Don't delete the meta-data below.
-78             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-79        -->
-80        <meta-data
-81            android:name="flutterEmbedding"
-82            android:value="2" />
-83
-84        <activity
-84-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:47
-85            android:name="com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity"
-85-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-112
-86            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
-86-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-137
-87            android:exported="false"
-87-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-37
-88            android:theme="@style/AppTheme" />
-88-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-44
-89        <activity
-89-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-22:55
-90            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity"
-90-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-120
-91            android:exported="false"
-91-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
-92            android:theme="@style/ThemeTransparent" />
-92-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-52
-93        <activity
-93-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-26:55
-94            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity"
-94-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-114
-95            android:exported="false"
-95-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-37
-96            android:theme="@style/ThemeTransparent" />
-96-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-52
-97        <activity
-97-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:9-31:55
-98            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
-98-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-134
-99            android:exported="false"
-99-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-37
-100            android:launchMode="singleInstance"
-100-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-48
-101            android:theme="@style/ThemeTransparent" />
-101-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-52
-102        <activity
-102-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-36:55
-103            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance"
-103-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-128
-104            android:exported="false"
-104-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-37
-105            android:launchMode="singleInstance"
-105-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-48
-106            android:theme="@style/ThemeTransparent" />
-106-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-52
-107
-108        <receiver
-108-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:38:9-41:40
-109            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver"
-109-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-119
-110            android:enabled="true"
-110-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-35
-111            android:exported="false" />
-111-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-37
-112
-113        <meta-data
-113-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-45:36
-114            android:name="io.flutter.embedded_views_preview"
-114-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-61
-115            android:value="true" />
-115-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-33
-116
-117        <uses-library
-117-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-118            android:name="androidx.window.extensions"
-118-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-119            android:required="false" />
-119-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-120        <uses-library
-120-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-121            android:name="androidx.window.sidecar"
-121-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-122            android:required="false" />
-122-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-123
-124        <provider
-124-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-125            android:name="androidx.startup.InitializationProvider"
-125-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-126            android:authorities="com.example.food_distribution_network.androidx-startup"
-126-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-127            android:exported="false" >
-127-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-128            <meta-data
-128-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-129                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-129-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-130                android:value="androidx.startup" />
-130-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-131            <meta-data
-131-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/utkarsh/.gradle/caches/transforms-3/d09dc68fec514ee5163524e6e1e043fd/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-132                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-132-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/utkarsh/.gradle/caches/transforms-3/d09dc68fec514ee5163524e6e1e043fd/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-133                android:value="androidx.startup" />
-133-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/utkarsh/.gradle/caches/transforms-3/d09dc68fec514ee5163524e6e1e043fd/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-134            <meta-data
-134-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-135                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-136                android:value="androidx.startup" />
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-137        </provider>
-138
-139        <receiver
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-140            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-140-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-141            android:directBootAware="false"
-141-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+43    <uses-permission android:name="com.example.food_distribution_network.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+44
+45    <application
+46        android:name="android.app.Application"
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.13.1] /home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+48        android:debuggable="true"
+49        android:extractNativeLibs="true"
+50        android:icon="@mipmap/ic_launcher"
+51        android:label="food_distribution_network" >
+52        <activity
+53            android:name="com.example.food_distribution_network.MainActivity"
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+55            android:exported="true"
+56            android:hardwareAccelerated="true"
+57            android:launchMode="singleTop"
+58            android:taskAffinity=""
+59            android:theme="@style/LaunchTheme"
+60            android:windowSoftInputMode="adjustResize" >
+61
+62            <!--
+63                 Specifies an Android theme to apply to this Activity as soon as
+64                 the Android process has started. This theme is visible to the user
+65                 while the Flutter UI initializes. After that, this theme continues
+66                 to determine the Window background behind the Flutter UI.
+67            -->
+68            <meta-data
+69                android:name="io.flutter.embedding.android.NormalTheme"
+70                android:resource="@style/NormalTheme" />
+71
+72            <intent-filter>
+73                <action android:name="android.intent.action.MAIN" />
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+76            </intent-filter>
+77        </activity>
+78        <!--
+79             Don't delete the meta-data below.
+80             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+81        -->
+82        <meta-data
+83            android:name="flutterEmbedding"
+84            android:value="2" />
+85
+86        <activity
+86-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-18:47
+87            android:name="com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity"
+87-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-112
+88            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+88-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-137
+89            android:exported="false"
+89-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-37
+90            android:theme="@style/AppTheme" />
+90-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-44
+91        <activity
+91-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-22:55
+92            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity"
+92-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-120
+93            android:exported="false"
+93-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+94            android:theme="@style/ThemeTransparent" />
+94-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-52
+95        <activity
+95-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-26:55
+96            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity"
+96-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-114
+97            android:exported="false"
+97-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-37
+98            android:theme="@style/ThemeTransparent" />
+98-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-52
+99        <activity
+99-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:9-31:55
+100            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+100-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-134
+101            android:exported="false"
+101-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-37
+102            android:launchMode="singleInstance"
+102-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-48
+103            android:theme="@style/ThemeTransparent" />
+103-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-52
+104        <activity
+104-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:32:9-36:55
+105            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+105-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-128
+106            android:exported="false"
+106-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:34:13-37
+107            android:launchMode="singleInstance"
+107-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-48
+108            android:theme="@style/ThemeTransparent" />
+108-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-52
+109
+110        <receiver
+110-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:38:9-41:40
+111            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver"
+111-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-119
+112            android:enabled="true"
+112-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-35
+113            android:exported="false" />
+113-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-37
+114
+115        <meta-data
+115-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-45:36
+116            android:name="io.flutter.embedded_views_preview"
+116-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-61
+117            android:value="true" />
+117-->[:flutter_inappwebview_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/flutter_inappwebview_android/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-33
+118
+119        <provider
+119-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-17:20
+120            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+120-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-82
+121            android:authorities="com.example.food_distribution_network.flutter.image_provider"
+121-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+122            android:exported="false"
+122-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+123            android:grantUriPermissions="true" >
+123-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
+124            <meta-data
+124-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:75
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+126                android:resource="@xml/flutter_image_picker_file_paths" />
+126-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-72
+127        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+128        <service
+128-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-31:19
+129            android:name="com.google.android.gms.metadata.ModuleDependencies"
+129-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-78
+130            android:enabled="false"
+130-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
+131            android:exported="false" >
+131-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+132            <intent-filter>
+132-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:29
+133                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+133-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-94
+133-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-91
+134            </intent-filter>
+135
+136            <meta-data
+136-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:36
+137                android:name="photopicker_activity:0:required"
+137-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+138                android:value="" />
+138-->[:image_picker_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
+139        </service>
+140        <service
+140-->[:geolocator_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:56
+141            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+141-->[:geolocator_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-77
 142            android:enabled="true"
-142-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-143            android:exported="true"
-143-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-144            android:permission="android.permission.DUMP" >
-144-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-145            <intent-filter>
-145-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-146                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-146-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-146-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-147            </intent-filter>
-148            <intent-filter>
-148-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-149                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-149-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-149-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-150            </intent-filter>
-151            <intent-filter>
-151-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-152                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-152-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-152-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-153            </intent-filter>
-154            <intent-filter>
-154-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-155                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-155-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-155-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-156            </intent-filter>
-157        </receiver>
-158    </application>
-159
-160</manifest>
+142-->[:geolocator_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-35
+143            android:exported="false"
+143-->[:geolocator_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+144            android:foregroundServiceType="location" />
+144-->[:geolocator_android] /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-53
+145
+146        <activity
+146-->[com.google.android.gms:play-services-base:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/76a747daf6ad1b0bbd6dea9e80dc93a0/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+147            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+147-->[com.google.android.gms:play-services-base:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/76a747daf6ad1b0bbd6dea9e80dc93a0/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+148            android:exported="false"
+148-->[com.google.android.gms:play-services-base:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/76a747daf6ad1b0bbd6dea9e80dc93a0/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+149            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+149-->[com.google.android.gms:play-services-base:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/76a747daf6ad1b0bbd6dea9e80dc93a0/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+150
+151        <meta-data
+151-->[com.google.android.gms:play-services-basement:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/3f5e4a3940b271317189a5bb5aa6d837/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+152            android:name="com.google.android.gms.version"
+152-->[com.google.android.gms:play-services-basement:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/3f5e4a3940b271317189a5bb5aa6d837/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+153            android:value="@integer/google_play_services_version" />
+153-->[com.google.android.gms:play-services-basement:18.3.0] /home/utkarsh/.gradle/caches/transforms-3/3f5e4a3940b271317189a5bb5aa6d837/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+154
+155        <uses-library
+155-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+156            android:name="androidx.window.extensions"
+156-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+157            android:required="false" />
+157-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+158        <uses-library
+158-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+159            android:name="androidx.window.sidecar"
+159-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+160            android:required="false" />
+160-->[androidx.window:window:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/b07313ac62c85e9dd5042ec21e9c0b15/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+161
+162        <provider
+162-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+163            android:name="androidx.startup.InitializationProvider"
+163-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+164            android:authorities="com.example.food_distribution_network.androidx-startup"
+164-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+165            android:exported="false" >
+165-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+166            <meta-data
+166-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+167                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+167-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+168                android:value="androidx.startup" />
+168-->[androidx.emoji2:emoji2:1.2.0] /home/utkarsh/.gradle/caches/transforms-3/863e0b98f72c4c9faf155c97a6ed0c37/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+169            <meta-data
+169-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/utkarsh/.gradle/caches/transforms-3/d09dc68fec514ee5163524e6e1e043fd/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+170                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+170-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/utkarsh/.gradle/caches/transforms-3/d09dc68fec514ee5163524e6e1e043fd/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+171                android:value="androidx.startup" />
+171-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/utkarsh/.gradle/caches/transforms-3/d09dc68fec514ee5163524e6e1e043fd/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+172            <meta-data
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+173                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+174                android:value="androidx.startup" />
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+175        </provider>
+176
+177        <receiver
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+178            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+178-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+179            android:directBootAware="false"
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+180            android:enabled="true"
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+181            android:exported="true"
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+182            android:permission="android.permission.DUMP" >
+182-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+183            <intent-filter>
+183-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+184                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+184-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+185            </intent-filter>
+186            <intent-filter>
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+187                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+188            </intent-filter>
+189            <intent-filter>
+189-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+190                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+190-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+191            </intent-filter>
+192            <intent-filter>
+192-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+193                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/utkarsh/.gradle/caches/transforms-3/4dc832e98b73beaf2917646442b0ba93/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+194            </intent-filter>
+195        </receiver>
+196    </application>
+197
+198</manifest>

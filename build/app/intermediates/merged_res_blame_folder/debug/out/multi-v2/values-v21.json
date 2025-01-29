@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.food_distribution_network.app-mergeDebugResources-45:/values-v21/values-v21.xml",
+            "outputFile": "com.example.food_distribution_network.app-mergeDebugResources-47:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/utkarsh/.gradle/caches/transforms-3/956f8d1a0f0e3e1ace1ca82263497398/transformed/core-1.13.1/res/values-v21/values-v21.xml",

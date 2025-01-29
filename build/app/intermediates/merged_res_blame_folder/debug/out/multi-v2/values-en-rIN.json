@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.food_distribution_network.app-mergeDebugResources-45:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.example.food_distribution_network.app-mergeDebugResources-47:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/home/utkarsh/.gradle/caches/transforms-3/d771655d964c19a62dd3b16b0fe3c222/transformed/preference-1.2.1/res/values-en-rIN/values-en-rIN.xml",

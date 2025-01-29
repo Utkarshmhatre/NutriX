@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_distribution_network/splash_screen.dart';
 import 'package:provider/provider.dart';
 import 'theme_provider.dart';
 import 'home_screen.dart';
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           themeMode: themeProvider.themeMode,
-          home: const HomeScreen(),
+          home: SplashScreen(),
         );
       },
     );

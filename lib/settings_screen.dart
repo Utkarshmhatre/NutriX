@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'theme_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -12,11 +13,23 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   bool _notificationsEnabled = false;
+  bool _isMusicEnabled = false;
+  late YoutubePlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _loadNotificationSettings();
+    _controller = YoutubePlayerController(
+      initialVideoId: YoutubePlayer.convertUrlToId(
+          'https://youtu.be/miPYq1uIKmY?list=PLOv3-AK0iiMZgTkJkehDyxwj3-R5L5Nep')!,
+      flags: const YoutubePlayerFlags(
+        autoPlay: false,
+        mute: false,
+        loop: true, // Loop the music if needed
+        hideThumbnail: true,
+      ),
+    );
   }
 
   _loadNotificationSettings() async {
@@ -29,6 +42,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
   _saveNotificationSettings(bool value) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('notificationsEnabled', value);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose(); // Dispose the controller when the screen is closed
+    super.dispose();
   }
 
   @override
@@ -63,6 +82,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
           ),
           ListTile(
+            title: const Text('Background Music'),
+            trailing: Switch(
+              value: _isMusicEnabled,
+              onChanged: (bool value) {
+                setState(() {
+                  _isMusicEnabled = value;
+                  if (_isMusicEnabled) {
+                    _controller.play();
+                  } else {
+                    _controller.pause();
+                  }
+                });
+              },
+            ),
+          ),
+          ListTile(
             title: const Text('About'),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
@@ -72,6 +107,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
               );
             },
           ),
+          // Add the YouTube player with AspectRatio to hide the video
+          if (_isMusicEnabled)
+            AspectRatio(
+              aspectRatio: 16 / 9,
+              child: YoutubePlayer(
+                controller: _controller,
+                showVideoProgressIndicator: false,
+                onReady: () {
+                  // Optionally, handle actions when the video is ready to play
+                },
+              ),
+            ),
         ],
       ),
     );

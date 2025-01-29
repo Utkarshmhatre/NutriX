@@ -23,7 +23,10 @@ dependencies:
   webview_flutter: ^4.10.0
   flutter_inappwebview: ^6.1.5
   google_generative_ai: ^0.2.0
-  syncfusion_flutter_charts: ^21.2.4  # Replace fl_chart
+  path: ^1.8.3
+  image_picker: ^1.1.2
+  geolocator: ^13.0.2
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -31,4 +34,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
+  assets:
+    - assets/logo.png

@@ -18,12 +18,12 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
     'Fruit Smoothie': '4wX3iSmD5cI',
     'Quinoa Salad': 'QwE4UZ2vukE',
     'Lentil Soup': 'oi-dcSkR-FQ',
-    'Baked Salmon': 'Y1FVEhpQMlc',
-    'Vegetarian Chili': 'Lw8ys1J-yOk',
-    'Greek Yogurt Parfait': 'uWdpEsa0Rm8',
-    'Spinach and Mushroom Omelette': 'qWy6kz0BJG0',
-    'Roasted Vegetable Medley': 'Zw-7QMkHSRk',
-    'Whole Grain Pasta Primavera': 'qPQ_42-Qb8Q',
+    'Baked Salmon': '2uYoqclu6so',
+    'Vegetarian Chili': 'oy1u49dLgaE',
+    'Greek Yogurt Parfait': '6rglgwP-r50',
+    'Spinach and Mushroom Omelette': 'FLwB5r68iO8',
+    'Roasted Vegetable Medley': 'GTqZg-JIhA4',
+    'Whole Grain Pasta Primavera': 'j1hAAcPay1w',
   };
 
   @override
@@ -42,49 +42,9 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
   }
 
   List<Map<String, String>> _generateRecipes() {
-    return [
-      {
-        'name': 'Vegetable Stir Fry',
-        'description': 'A quick and healthy meal with mixed vegetables'
-      },
-      {
-        'name': 'Fruit Smoothie',
-        'description': 'Blend your favorite fruits for a refreshing drink'
-      },
-      {
-        'name': 'Quinoa Salad',
-        'description': 'Protein-packed salad with vegetables and lemon dressing'
-      },
-      {
-        'name': 'Lentil Soup',
-        'description': 'Hearty soup with lentils, vegetables, and spices'
-      },
-      {
-        'name': 'Baked Salmon',
-        'description': 'Oven-baked salmon with herbs and lemon'
-      },
-      {
-        'name': 'Vegetarian Chili',
-        'description':
-            'Spicy chili with beans, vegetables, and plant-based protein'
-      },
-      {
-        'name': 'Greek Yogurt Parfait',
-        'description': 'Layered yogurt with fruits, nuts, and honey'
-      },
-      {
-        'name': 'Spinach and Mushroom Omelette',
-        'description': 'Protein-rich breakfast with vegetables'
-      },
-      {
-        'name': 'Roasted Vegetable Medley',
-        'description': 'Assorted vegetables roasted with olive oil and herbs'
-      },
-      {
-        'name': 'Whole Grain Pasta Primavera',
-        'description': 'Pasta with fresh spring vegetables and light sauce'
-      },
-    ];
+    return _recipeVideoIds.keys
+        .map((name) => {'name': name, 'videoId': _recipeVideoIds[name]!})
+        .toList();
   }
 
   List<Map<String, String>> _generateSustainabilityTips() {
@@ -105,38 +65,203 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
             'Incorporate more vegetables, fruits, and whole grains into your diet'
       },
       {
-        'title': 'Use Reusable Containers',
-        'description':
-            'Bring your own containers for takeout and leftovers to reduce single-use plastics'
+        "title": "Use Reusable Bags",
+        "description": "Carry reusable shopping bags to reduce plastic waste"
       },
       {
-        'title': 'Support Local Farmers',
-        'description':
-            'Buy from local farmers\' markets to reduce transportation emissions'
+        "title": "Opt for Sustainable Seafood",
+        "description":
+            "Choose seafood certified by organizations like the MSC or ASC"
       },
       {
-        'title': 'Grow Your Own Herbs',
-        'description':
-            'Start a small herb garden to have fresh herbs on hand and reduce packaging'
+        "title": "Reduce Single-Use Plastics",
+        "description":
+            "Use reusable bottles, cutlery, and straws to minimize plastic waste"
       },
       {
-        'title': 'Properly Store Food',
-        'description':
-            'Learn how to store different foods to extend their shelf life and reduce waste'
+        "title": "Buy in Bulk",
+        "description":
+            "Purchase food and household items in bulk to reduce packaging waste"
       },
       {
-        'title': 'Use Every Part',
-        'description':
-            'Find creative ways to use vegetable scraps, like making stock from peels and stems'
+        "title": "Support Local Farmers",
+        "description":
+            "Buy from farmers' markets to support local agriculture and reduce transportation emissions"
       },
       {
-        'title': 'Reduce Meat Consumption',
-        'description':
-            'Try "Meatless Mondays" or reducing portion sizes of meat in meals'
+        "title": "Compost Organic Waste",
+        "description":
+            "Turn food scraps and yard waste into nutrient-rich compost"
       },
       {
-        'title': 'Choose Sustainable Seafood',
-        'description': 'Use guides to select seafood from sustainable sources'
+        "title": "Conserve Water",
+        "description":
+            "Fix leaks, take shorter showers, and use water-efficient appliances"
+      },
+      {
+        "title": "Switch to LED Bulbs",
+        "description":
+            "Use energy-efficient lighting to reduce electricity consumption"
+      },
+      {
+        "title": "Unplug Devices",
+        "description": "Turn off electronics when not in use to save energy"
+      },
+      {
+        "title": "Choose Renewable Energy",
+        "description": "Switch to solar or wind power if possible"
+      },
+      {
+        "title": "Use Public Transport",
+        "description":
+            "Reduce carbon emissions by taking buses, trains, or carpooling"
+      },
+      {
+        "title": "Walk or Bike More",
+        "description":
+            "Use walking or cycling for short trips instead of driving"
+      },
+      {
+        "title": "Repair Instead of Replacing",
+        "description": "Fix broken items instead of throwing them away"
+      },
+      {
+        "title": "Recycle Properly",
+        "description":
+            "Sort and dispose of recyclables according to local guidelines"
+      },
+      {
+        "title": "Avoid Fast Fashion",
+        "description":
+            "Choose quality, sustainable clothing over cheap, disposable fashion"
+      },
+      {
+        "title": "Wash Clothes in Cold Water",
+        "description": "Save energy by using cold water when doing laundry"
+      },
+      {
+        "title": "Air-Dry Clothes",
+        "description":
+            "Reduce electricity use by drying clothes on a line or rack"
+      },
+      {
+        "title": "Use Eco-Friendly Cleaning Products",
+        "description": "Choose non-toxic, biodegradable cleaners"
+      },
+      {
+        "title": "Switch to a Refillable Water Bottle",
+        "description":
+            "Avoid single-use plastic bottles by using a reusable one"
+      },
+      {
+        "title": "Grow Your Own Food",
+        "description":
+            "Plant a home garden to reduce reliance on store-bought produce"
+      },
+      {
+        "title": "Support Ethical Brands",
+        "description":
+            "Buy from companies that prioritize sustainability and fair labor practices"
+      },
+      {
+        "title": "Use Cloth Napkins",
+        "description":
+            "Replace disposable paper napkins with reusable fabric ones"
+      },
+      {
+        "title": "Donate Unused Items",
+        "description":
+            "Give clothes, electronics, and furniture a second life by donating them"
+      },
+      {
+        "title": "Use a Programmable Thermostat",
+        "description": "Optimize heating and cooling to save energy"
+      },
+      {
+        "title": "Install Low-Flow Fixtures",
+        "description": "Reduce water use with low-flow showerheads and faucets"
+      },
+      {
+        "title": "Reduce Paper Use",
+        "description": "Go paperless with bills and digital documents"
+      },
+      {
+        "title": "Choose Bamboo Products",
+        "description":
+            "Opt for bamboo over plastic or wood for a more sustainable choice"
+      },
+      {
+        "title": "Cook at Home More Often",
+        "description":
+            "Reduce packaging waste and food miles by preparing meals at home"
+      },
+      {
+        "title": "Use a Reusable Coffee Cup",
+        "description": "Bring your own cup to coffee shops to cut down on waste"
+      },
+      {
+        "title": "Avoid Microplastics",
+        "description":
+            "Choose personal care products without plastic microbeads"
+      },
+      {
+        "title": "Eat Less Processed Food",
+        "description":
+            "Reduce packaging and energy use by consuming whole foods"
+      },
+      {
+        "title": "Opt for Digital Receipts",
+        "description":
+            "Say no to paper receipts to cut down on unnecessary waste"
+      },
+      {
+        "title": "Use a Rain Barrel",
+        "description": "Collect rainwater for gardening and outdoor use"
+      },
+      {
+        "title": "Switch to Bar Soap",
+        "description":
+            "Reduce plastic waste by using bar soap instead of bottled body wash"
+      },
+      {
+        "title": "Buy Second-Hand",
+        "description":
+            "Shop for used clothing, furniture, and electronics to reduce waste"
+      },
+      {
+        "title": "Adopt a Minimalist Lifestyle",
+        "description":
+            "Buy only what you need and focus on quality over quantity"
+      },
+      {
+        "title": "Make Your Own Cleaning Supplies",
+        "description":
+            "Use vinegar, baking soda, and lemon to create natural cleaners"
+      },
+      {
+        "title": "Use Solar-Powered Devices",
+        "description": "Charge gadgets with solar energy when possible"
+      },
+      {
+        "title": "Avoid Palm Oil",
+        "description":
+            "Check labels to ensure products don't contribute to deforestation"
+      },
+      {
+        "title": "Use Cloth Diapers",
+        "description": "Reduce waste by using reusable diapers for babies"
+      },
+      {
+        "title": "Buy Fair Trade Products",
+        "description": "Support ethical labor practices and sustainable farming"
+      },
+      {
+        "title": "Take the Stairs",
+        "description": "Save energy by using stairs instead of elevators"
+      },
+      {
+        "title": "Use Eco-Friendly Toilet Paper",
+        "description": "Choose recycled or bamboo toilet paper to save trees"
       },
     ];
   }
@@ -161,7 +286,7 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
             : TabBarView(
                 children: [
                   _buildStorageGuide(),
-                  _buildRecipes(),
+                  _buildRecipesGrid(),
                   _buildSustainabilityTips(),
                 ],
               ),
@@ -169,72 +294,209 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
     );
   }
 
+  String _getImageUrl(String category) {
+    // In a real app, you would replace these with actual image URLs
+    // Currently using placeholder images with different dimensions for each category
+    switch (category.toLowerCase()) {
+      case 'fruits':
+        return 'https://nurserylive.com/cdn/shop/articles/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355-816049.jpg?v=1679747958';
+      case 'vegetables':
+        return 'https://cdn.britannica.com/17/196817-159-9E487F15/vegetables.jpg';
+      case 'root vegetables':
+        return 'https://cdn-prod.medicalnewstoday.com/content/images/articles/280/280579/potatoes-can-be-healthful.jpg';
+      case 'bread':
+        return 'https://static01.nyt.com/images/2024/10/08/multimedia/13EATrex-LD-briocherex-blfk/13EATrex-LD-briocherex-blfk-jumbo.jpg';
+      case 'dairy':
+        return 'https://www.dairyfoods.com/ext/resources/DF/2024/Nov/GettyImages-2150650373.jpg?1734040205';
+      case 'meat':
+        return 'https://packagingguruji.com/wp-content/uploads/2022/09/Old-Non-Veg-Logo.png';
+      case 'eggs':
+        return 'https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/eggs-counter-1296x728-header.jpg?w=1155&h=1528';
+      default:
+        return 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg';
+    }
+  }
+
   Widget _buildStorageGuide() {
-    return ListView(
-      children: const [
-        ListTile(
-          title: Text('Fruits'),
-          subtitle: Text('Store most fruits in the refrigerator'),
-        ),
-        ListTile(
-          title: Text('Vegetables'),
-          subtitle: Text('Keep potatoes and onions in a cool, dark place'),
-        ),
-        ListTile(
-          title: Text('Bread'),
-          subtitle:
-              Text('Store in a bread box or paper bag at room temperature'),
-        ),
-        ListTile(
-          title: Text('Dairy'),
-          subtitle: Text('Keep in the coldest part of the refrigerator'),
-        ),
-        ListTile(
-          title: Text('Meat'),
-          subtitle: Text('Store on the bottom shelf of the refrigerator'),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildRecipes() {
-    return ListView.builder(
-      itemCount: _recipes.length,
-      itemBuilder: (context, index) {
-        return _buildRecipeCard(
-            _recipes[index]['name']!, _recipes[index]['description']!);
+    final List<Map<String, String>> storageData = [
+      {
+        'category': 'Fruits',
+        'type': 'Apples, Berries, Citrus',
+        'storage': 'Store most fruits in the refrigerator',
+        'expiry': '1-2 weeks'
       },
+      {
+        'category': 'Vegetables',
+        'type': 'Carrots, Broccoli, Peppers',
+        'storage': 'Keep in the fridge crisper drawer',
+        'expiry': '1-2 weeks'
+      },
+      {
+        'category': 'Root Vegetables',
+        'type': 'Potatoes, Onions, Garlic',
+        'storage': 'Keep in a cool, dark place with ventilation',
+        'expiry': '1-2 months'
+      },
+      {
+        'category': 'Bread',
+        'type': 'Whole wheat, Sourdough, White',
+        'storage': 'Store in a bread box or paper bag at room temperature',
+        'expiry': '3-7 days'
+      },
+      {
+        'category': 'Dairy',
+        'type': 'Milk, Cheese, Yogurt',
+        'storage': 'Keep in the coldest part of the refrigerator',
+        'expiry': 'Milk: 1 week, Cheese: 3 weeks'
+      },
+      {
+        'category': 'Meat',
+        'type': 'Chicken, Beef, Fish',
+        'storage': 'Store on the bottom shelf of the fridge',
+        'expiry': '1-3 days (fresh), up to 6 months (frozen)'
+      },
+      {
+        'category': 'Eggs',
+        'type': 'Chicken, Duck',
+        'storage': 'Keep in the main fridge compartment',
+        'expiry': '3-5 weeks'
+      }
+    ];
+
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: SingleChildScrollView(
+        child: GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            childAspectRatio: 0.7, // Made cards taller to accommodate images
+          ),
+          itemCount: storageData.length,
+          itemBuilder: (context, index) {
+            final item = storageData[index];
+            return Card(
+              elevation: 3,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Image section
+                  ClipRRect(
+                    borderRadius:
+                        const BorderRadius.vertical(top: Radius.circular(12)),
+                    child: Image.network(
+                      _getImageUrl(item['category']!),
+                      height: 100,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  // Content section
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            item['category']!,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            "🛒 ${item['type']!}",
+                            style: const TextStyle(fontSize: 12),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            "📦 ${item['storage']!}",
+                            style: const TextStyle(fontSize: 12),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            "⏳ Expiry: ${item['expiry']!}",
+                            style: const TextStyle(fontSize: 12),
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 2,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
     );
   }
 
-  Widget _buildRecipeCard(String title, String description) {
-    return Card(
-      elevation: 2,
-      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      child: ListTile(
-        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
-        subtitle: Text(description),
-        trailing: IconButton(
-          icon: const Icon(Icons.play_circle_fill),
-          onPressed: () {
-            // Check if video ID is valid before navigating
-            if (_recipeVideoIds[title]?.isNotEmpty ?? false) {
+  Widget _buildRecipesGrid() {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+          childAspectRatio: 1,
+        ),
+        itemCount: _recipes.length,
+        itemBuilder: (context, index) {
+          String title = _recipes[index]['name']!;
+          String videoId = _recipes[index]['videoId']!;
+          String thumbnailUrl = 'https://img.youtube.com/vi/$videoId/0.jpg';
+
+          return GestureDetector(
+            onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => RecipeVideoScreen(
                     title: title,
-                    videoId: _recipeVideoIds[title] ?? '',
+                    videoId: videoId,
                   ),
                 ),
               );
-            } else {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text("Invalid video ID")),
-              );
-            }
-          },
-        ),
+            },
+            child: Card(
+              elevation: 4,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child: Image.network(
+                      thumbnailUrl,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      title,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
       ),
     );
   }
@@ -257,7 +519,7 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
   }
 }
 
-class RecipeVideoScreen extends StatefulWidget {
+class RecipeVideoScreen extends StatelessWidget {
   final String title;
   final String videoId;
 
@@ -266,39 +528,15 @@ class RecipeVideoScreen extends StatefulWidget {
       : super(key: key);
 
   @override
-  _RecipeVideoScreenState createState() => _RecipeVideoScreenState();
-}
-
-class _RecipeVideoScreenState extends State<RecipeVideoScreen> {
-  late YoutubePlayerController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = YoutubePlayerController(
-      initialVideoId: widget.videoId,
-      flags: const YoutubePlayerFlags(
-        autoPlay: true,
-        mute: false,
-      ),
-    );
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: AppBar(title: Text(title)),
       body: Center(
         child: YoutubePlayer(
-          controller: _controller,
+          controller: YoutubePlayerController(
+            initialVideoId: videoId,
+            flags: const YoutubePlayerFlags(autoPlay: true, mute: false),
+          ),
           showVideoProgressIndicator: true,
           progressIndicatorColor: Colors.blueAccent,
         ),
