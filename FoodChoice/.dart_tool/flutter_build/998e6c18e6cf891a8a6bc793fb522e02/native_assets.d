@@ -1,0 +1,1 @@
+ /home/utkarsh/Desktop/NutriX_YatindraMalpani_Team2/FoodChoice/.dart_tool/flutter_build/998e6c18e6cf891a8a6bc793fb522e02/native_assets.yaml: 

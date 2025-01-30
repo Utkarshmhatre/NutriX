@@ -167,9 +167,9 @@ class _WarehouseManagementScreenState extends State<WarehouseManagementScreen> {
                 const SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () async {
-                    final ImagePicker _picker = ImagePicker();
+                    final ImagePicker picker = ImagePicker();
                     final XFile? image =
-                        await _picker.pickImage(source: ImageSource.gallery);
+                        await picker.pickImage(source: ImageSource.gallery);
                     if (image != null) {
                       setState(() {
                         imagePath = image.path;

@@ -14,7 +14,7 @@ class DistributionScreen extends StatefulWidget {
 
 class _DistributionScreenState extends State<DistributionScreen> {
   final MapController _mapController = MapController();
-  final LatLng _center = LatLng(45.521563, -122.677433);
+  final LatLng _center = const LatLng(45.521563, -122.677433);
   final List<Marker> _markers = [];
   List<LatLng> _routePoints = [];
   final TextEditingController _searchController = TextEditingController();
@@ -164,20 +164,20 @@ class _DistributionScreenState extends State<DistributionScreen> {
         children: [
           FloatingActionButton(
             onPressed: _optimizeRoute,
-            child: const Icon(Icons.route),
             heroTag: 'optimize',
+            child: const Icon(Icons.route),
           ),
           const SizedBox(height: 16),
           FloatingActionButton(
             onPressed: _clearRoute,
-            child: const Icon(Icons.clear),
             heroTag: 'clear',
+            child: const Icon(Icons.clear),
           ),
           const SizedBox(height: 16),
           FloatingActionButton(
             onPressed: _getCurrentLocation,
-            child: const Icon(Icons.my_location),
             heroTag: 'location',
+            child: const Icon(Icons.my_location),
           ),
         ],
       ),

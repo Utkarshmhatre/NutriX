@@ -47,16 +47,16 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: _screens[_currentIndex],
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(30),
           topRight: Radius.circular(30),
         ),
         child: Container(
           decoration: BoxDecoration(
             color: isDarkMode
-                ? Color.fromARGB(
+                ? const Color.fromARGB(
                     255, 29, 36, 51) // Dark mode: Dark blue background
-                : Color.fromARGB(255, 108, 0, 128)
+                : const Color.fromARGB(255, 108, 0, 128)
                     .withOpacity(0.9), // Light mode: Purple with opacity
             boxShadow: [
               BoxShadow(
@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Icon(
                             _getIconForIndex(index),
                             color: isDarkMode
-                                ? Color.fromARGB(
+                                ? const Color.fromARGB(
                                     255, 110, 3, 129) // Dark mode purple
                                 : Colors.purple, // Light mode purple
                           ),
@@ -145,7 +145,7 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
 
   Future<void> _fetchData() async {
     try {
-      await Future.delayed(Duration(seconds: 2)); // Simulate network delay
+      await Future.delayed(const Duration(seconds: 2)); // Simulate network delay
       if (mounted) {
         setState(() {});
       }
@@ -162,16 +162,16 @@ class _ConsumerScreenState extends State<ConsumerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Consumer Screen')),
+      appBar: AppBar(title: const Text('Consumer Screen')),
       body: FutureBuilder<void>(
         future: _fetchDataFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else {
-            return Center(child: Text('Data Loaded'));
+            return const Center(child: Text('Data Loaded'));
           }
         },
       ),

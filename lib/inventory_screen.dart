@@ -113,7 +113,7 @@ class _InventoryScreenState extends State<InventoryScreen> {
     DateTime selectedDate = DateTime.now();
     String imagePath = '';
 
-    Future<void> _pickImage() async {
+    Future<void> pickImage() async {
       final pickedFile =
           await ImagePicker().pickImage(source: ImageSource.gallery);
       if (pickedFile != null) {
@@ -164,7 +164,7 @@ class _InventoryScreenState extends State<InventoryScreen> {
                   },
                 ),
                 ElevatedButton(
-                  onPressed: _pickImage,
+                  onPressed: pickImage,
                   child: const Text('Pick Image'),
                 ),
               ],
